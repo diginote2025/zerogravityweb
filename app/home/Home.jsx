@@ -1,38 +1,58 @@
+import Navbar from "@/components/Navbar";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-black text-white">
-      {/* Background subtle pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.05),transparent_60%)]" />
+      {/* 🎥 Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        className="absolute inset-0 z-0 h-full w-full object-cover"
+      >
+        <source
+          src="https://res.cloudinary.com/dnv5c78dl/video/upload/v1765710804/vecteezy_animated-flying-through-the-stars-and-blue-nebula-in-space_8078506_uvvzmb.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      {/* Subtle overlay */}
+      <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-6 py-10 text-center">
-        <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1 text-xs text-gray-300 backdrop-blur">
-          🔥 Solutions
-        </span>
+      <div className="relative ">
+        {/* <Navbar /> */}
 
-        <h1 className="mt-6 text-4xl font-bold leading-tight md:text-5xl">
-          Transform Your Data Into <br />
-          <span className="text-orange-500">
-            Actionable Solutions
+        <div className="z-10 pt-16 mx-auto max-w-5xl px-6  text-center h-screen">
+          <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1 text-xs text-gray-300 backdrop-blur">
+            🚀 Web Development Company
           </span>
-        </h1>
 
-        <p className="mx-auto mt-4 max-w-xl text-sm text-gray-400">
-          Unlock the full potential of your data with our suite of analytics
-          tools designed for insight and growth.
-        </p>
+          <h1 className="mt-6 text-4xl font-bold leading-tight md:text-5xl">
+            We Build High-Performance <br />
+            <span className="text-orange-500">
+              Websites That Grow Your Business
+            </span>
+          </h1>
 
-        <div className="mt-8 flex justify-center gap-4">
-          <button className="rounded-full bg-orange-500 px-6 py-3 text-sm font-medium text-black hover:bg-orange-400 transition">
-            Download App
-          </button>
-          <button className="rounded-full border border-white/20 px-6 py-3 text-sm text-white hover:bg-white/10 transition">
-            Talk to Sales
-          </button>
+          <p className="mx-auto mt-4 max-w-xl text-sm text-gray-400">
+            We design and develop fast, secure, and scalable websites using
+            modern technologies—focused on performance, user experience, and
+            results.
+          </p>
+
+          <a href="https://portfolio.diginote.in" className="mt-8 flex justify-center gap-4">
+            <button className="rounded-full bg-orange-500 px-6 py-3 text-sm font-medium text-black hover:bg-orange-400 transition">
+              Get a Free Quote
+            </button>
+            <button className="rounded-full border border-white/20 px-6 py-3 text-sm text-white hover:bg-white/10 transition">
+              View Our Work
+            </button>
+          </a>
         </div>
       </div>
-
-  
     </section>
   );
 }
