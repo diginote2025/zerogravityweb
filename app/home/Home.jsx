@@ -22,8 +22,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
-      <div className="relative ">
-        {/* <Navbar /> */}
+      <div className="relative scrollbar-hide">
+        <Navbar />
 
         <div className="z-10 pt-16 mx-auto max-w-5xl px-6  text-center h-screen">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1 text-xs text-gray-300 backdrop-blur">
@@ -43,14 +43,14 @@ export default function Hero() {
             results.
           </p>
 
-          <a href="https://portfolio.diginote.in" className="mt-8 flex justify-center gap-4">
-            <button className="rounded-full bg-orange-500 px-6 py-3 text-sm font-medium text-black hover:bg-orange-400 transition">
+          <div className="mt-8 flex justify-center gap-4">
+            <a href="/contact" className="rounded-full bg-orange-500 px-6 py-3 text-sm font-medium text-black hover:bg-orange-400 transition">
               Get a Free Quote
-            </button>
-            <button className="rounded-full border border-white/20 px-6 py-3 text-sm text-white hover:bg-white/10 transition">
+            </a>
+            <a href="/projects" className="rounded-full border border-white/20 px-6 py-3 text-sm text-white hover:bg-white/10 transition">
               View Our Work
-            </button>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </section>

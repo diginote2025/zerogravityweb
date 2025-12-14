@@ -4,7 +4,7 @@ import WebsiteProcess from "@/pages/WebsiteProcess";
 
 export default function Page() {
   return (
-    <main className=" ">
+    <main className=" scrollbar-hide ">
       <Hero/>
    {/* <Stats/>
    <WebsiteProcess/> */}
