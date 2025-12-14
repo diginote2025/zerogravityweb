@@ -49,7 +49,7 @@ export default function Hero() {
           "
         >
           <iframe
-            src="https://zerogravityweb.diginote.in/"
+            src="https://zerogravityweb.diginote.in/home"
             className="h-full w-full border-0"
           />
         </div>
