@@ -1,0 +1,32 @@
+export const properties = [
+  {
+    id: 1,
+    title: 'Majestic Royal Mansion',
+    location: 'St Ann Black Andrews',
+    beds: 4,
+    baths: 3,
+    sqft: '2,500 sq ft',
+    price: '$133,500',
+    featured: false,
+  },
+  {
+    id: 2,
+    title: 'Verad Resistance',
+    location: 'St Ann Black Andrews',
+    beds: 3,
+    baths: 2,
+    sqft: '1,800 sq ft',
+    price: '$200,000',
+    featured: true,
+  },
+  {
+    id: 3,
+    title: 'Valention',
+    location: 'St Ann Black Andrews',
+    beds: 5,
+    baths: 4,
+    sqft: '3,200 sq ft',
+    price: '$170,500',
+    featured: false,
+  },
+];
