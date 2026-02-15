@@ -2,20 +2,32 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-center relative items-center text-white z-50">
-      <div className="w-full pt-20 fixed max-w-250 py-4 px-4 bg-white/5 backdrop-blur-sm rounded-2xl flex border-b  justify-between items-center">
-        <a href="/">LOGO</a>
-        <div className="flex gap-10">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/services">Services</a>
-          <a href="/projects">Projects</a>
-          <a href="/blog">Blog</a>
+     <div className="fixed top-0 left-0 w-full z-50">
+    <div className="mx-auto max-w-7xl px-6">
+      <div className=" flex items-center justify-between rounded-2xl  px-6 py-4 text-white ">
+        
+        {/* Logo */}
+        <p className="text-xl font-semibold tracking-wide cursor-pointer">
+          ZGW
+        </p>
+  <nav className="flex justify-center items-center  z-10">
+        <div className="py-4 px-6 rounded-b-xl flex border-b  backdrop-blur-[3px] justify-center">
+          <div className="flex gap-10">
+            <a href="/" className="hover:text-orange-400">Home</a>
+            <a href="/about" className="hover:text-orange-400">About</a>
+            <a href="/services" className="hover:text-orange-400">Services</a>
+            <a href="/projects" className="hover:text-orange-400">Projects</a>
+            <a href="/blog" className="hover:text-orange-400">Blog</a>
+          </div>
         </div>
-         <a href="/contact" className="rounded-full border border-white/30 px-5 py-2 text-sm font-medium transition-all duration-300 hover:bg-white hover:text-black">
-        Contact
-      </a>
+      </nav>
+        {/* Contact Button */}
+        <a href="/contact" className="rounded-full border border-white/30 px-5 py-2 text-sm font-medium transition-all duration-300 hover:bg-white hover:text-black">
+          Contact
+        </a>
+  
       </div>
-    </nav>
+    </div>
+  </div>
   );
 }

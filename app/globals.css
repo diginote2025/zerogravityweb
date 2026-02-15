@@ -3,3 +3,38 @@
 .sub-website::-webkit-scrollbar{
   display:none;
 }
+
+
+/* 🌞 Sun Pulse */
+@keyframes sunPulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* 🔥 Fire Waves */
+@keyframes fireWave {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateX(-50%) scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* 🧲 Magnetic Field */
+@keyframes magneticRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

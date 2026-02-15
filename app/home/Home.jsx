@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-black text-white">
+    <section className="relative overflow-hidden  bg-black text-white">
       {/* 🎥 Background Video */}
       <video
         autoPlay
@@ -23,17 +23,17 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative scrollbar-hide">
-        <Navbar />
+        {/* <Navbar /> */}
 
-        <div className="z-10 pt-14 mx-auto max-w-5xl px-6  text-center h-screen">
+        <div className="z-10 pt-24 mx-auto max-w-5xl px-6  text-center h-screen">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1 text-xs text-gray-300 backdrop-blur">
             🚀 Web Development Company
           </span>
 
           <h1 className="mt-6 text-4xl font-bold leading-tight md:text-5xl">
-            We Build High-Performance <br />
+            Professional Website Solutions  <br />
             <span className="text-orange-500">
-              Websites That Grow Your Business
+              That Drive Business Growth
             </span>
           </h1>
 

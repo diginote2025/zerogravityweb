@@ -14,7 +14,7 @@ export default function ContactPage() {
         <div className="w-full h-80 -z-10 absolute bg-orange-500/30 left-0 -top-40 rounded-b-full blur-3xl" />
         <p
           className={`text-[200px] text-center font-bold 
-  bg-gradient-to-b from-white/30 to-black 
+  bg-gradient-to-b from-orange-400 via-orange-400/10 to-black 
   bg-clip-text text-transparent ${bebas.className}`}
         >
           CONTACT
