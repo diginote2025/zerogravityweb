@@ -1,8 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Hero from "@/pages/Hero";
-import Stats from "@/pages/Stats";
-import WebsiteProcess from "@/pages/WebsiteProcess";
+import Hero from "@/components/homepage/Hero";
+import Stats from "@/components/homepage/Stats";
+import WebsiteProcess from "@/components/homepage/WebsiteProcess";
+import About from "./home/About";
+import Process from "./home/Process";
+import CTA from "./home/CTA";
+import Services from "./home/Services";
+import Responsive from "./home/Responsive";
 
 export default function Page() {
   return (
@@ -11,7 +16,11 @@ export default function Page() {
       <Hero/>
    {/* <Stats/>
    <WebsiteProcess/> */}
-
+<About/>
+<Responsive/>
+<Services/>
+<Process/>
+<CTA/>
    <Footer/>
     </main>
   );

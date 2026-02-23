@@ -8,7 +8,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <p className="text-xl font-semibold tracking-wide cursor-pointer">
-          ZGW
+          ZEROGWTY
         </p>
   <nav className="flex justify-center items-center  z-10">
         <div className="py-4 px-6 rounded-b-xl flex border-b  backdrop-blur-[3px] justify-center">
@@ -22,7 +22,7 @@ export default function Navbar() {
         </div>
       </nav>
         {/* Contact Button */}
-        <a href="/contact" className="rounded-full border border-white/30 px-5 py-2 text-sm font-medium transition-all duration-300 hover:bg-white hover:text-black">
+        <a href="/contact" className="rounded-full border text-black hover:text-white border-white/30 px-8 py-2 text-sm font-medium transition-all duration-300 bg-white hover:bg-white/0 hover:text-black">
           Contact
         </a>
   

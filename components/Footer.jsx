@@ -1,86 +1,99 @@
 import React from "react";
 import Link from "next/link";
+// Make sure to install lucide-react: npm install lucide-react
+import { Mail, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-black to-zinc-950 text-gray-400 pt-20">
       <div className="max-w-[1250px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-
+        
         {/* LOGO + ABOUT */}
         <div>
-          <h2 className="text-white text-xl font-semibold mb-4">Finwise</h2>
+          <h2 className="text-white text-xl mb-4">
+            Zerogravityweb <br />
+            <small className="text-xs text-gray-500">
+              Websites Without Limits
+            </small>
+          </h2>
           <p className="text-sm leading-relaxed">
-            We serve as intermediaries, safeguarding funds, facilitating
-            transactions for individuals & businesses.
+            Zerogravityweb builds fast, modern, and scalable websites that help
+            brands grow beyond boundaries. From clean UI to powerful performance,
+            we craft digital experiences that stand out.
           </p>
-
-          <div className="flex gap-4 mt-6">
-            <span className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-              X
-            </span>
-            <span className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-              IG
-            </span>
-            <span className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-              IN
-            </span>
-          </div>
         </div>
 
-        {/* USE CASES */}
+        {/* QUICK LINKS */}
         <div>
-          <h3 className="text-white font-medium mb-4">USE CASES</h3>
+          <h3 className="text-white font-medium mb-4 uppercase tracking-wider">Quick Links</h3>
           <ul className="space-y-3 text-sm">
-            <li>Online Business</li>
-            <li>Creators</li>
-            <li>E-Commerce</li>
-            <li>Agencies</li>
+            <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+            <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+            <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
+            <li><Link href="/projects" className="hover:text-white transition-colors">Projects</Link></li>
           </ul>
         </div>
 
-        {/* PRODUCTS */}
+        {/* SERVICES */}
         <div>
-          <h3 className="text-white font-medium mb-4">PRODUCTS</h3>
+          <h3 className="text-white font-medium mb-4 uppercase tracking-wider">Services</h3>
           <ul className="space-y-3 text-sm">
-            <li>Invoicing</li>
-            <li>Office Hours</li>
-            <li>Explore More</li>
-            <li>Loan Type</li>
-            <li>Calculator</li>
+            <li className="hover:text-white cursor-pointer transition-colors">Website Design</li>
+            <li className="hover:text-white cursor-pointer transition-colors">Web Development</li>
+            <li className="hover:text-white cursor-pointer transition-colors">UI/UX Design</li>
+            <li className="hover:text-white cursor-pointer transition-colors">Landing Pages</li>
+            <li className="hover:text-white cursor-pointer transition-colors">Maintenance</li>
           </ul>
         </div>
 
-        {/* NEWSLETTER */}
+        {/* CONTACT & SOCIALS */}
         <div>
-          <h3 className="text-white font-medium mb-4">NEWSLETTER</h3>
-          <p className="text-sm mb-4">For latest updates subscribe us!</p>
+          <h3 className="text-white font-medium mb-4 uppercase tracking-wider">Contact</h3>
+          <a 
+            href="mailto:hello@zerogravityweb.com" 
+            className="flex items-center gap-2 text-sm hover:text-white transition-colors group"
+          >
+            <Mail size={16} className="text-gray-500 group-hover:text-white transition-colors" />
+            hello@zerogravityweb.com
+          </a>
 
-          <div className="flex items-center bg-white/10 rounded-full px-4 py-2">
-            <input
-              type="email"
-              placeholder="Enter Email"
-              className="bg-transparent outline-none text-sm flex-1 placeholder-gray-500"
-            />
-            <button className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center">
-              →
-            </button>
+          <div className="flex gap-4 mt-8">
+            <SocialIcon href="https://x.com" icon={<Twitter size={18} />} />
+            <SocialIcon href="https://instagram.com" icon={<Instagram size={18} />} />
+            <SocialIcon href="https://linkedin.com" icon={<Linkedin size={18} />} />
           </div>
-
-          <p className="text-sm mt-4">📧 hello@finwise.com</p>
         </div>
       </div>
 
       {/* BOTTOM BAR */}
       <div className="border-t border-white/10 mt-16">
         <div className="max-w-[1250px] mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-sm gap-4">
-          <p>© 2023 Finwise</p>
-          <p className="opacity-50">www.DownloadNewThemes.com</p>
+          <p>© {new Date().getFullYear()} Zerogravityweb</p>
+          <p className="opacity-50 italic">Build Beyond Gravity</p>
           <div className="flex gap-6">
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Contact Us</Link>
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/contact" className="hover:text-white transition-colors">
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>
     </footer>
+  );
+}
+
+// Helper component for Social Icons to keep code DRY
+function SocialIcon({ href, icon }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-gray-400 hover:bg-white hover:text-black hover:scale-110 transition-all duration-300"
+    >
+      {icon}
+    </a>
   );
 }
