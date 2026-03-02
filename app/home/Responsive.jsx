@@ -45,7 +45,7 @@ export default function Responsive() {
           {/* THE WEBSITE IFRAME */}
           <div className="w-full h-full bg-white">
             <iframe
-              src="https://www.sociowright.in/"
+              src="/home"
               className="w-full h-full border-none"
               title="Sociowright Preview"
               loading="lazy"

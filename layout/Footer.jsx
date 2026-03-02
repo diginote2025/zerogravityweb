@@ -36,7 +36,7 @@ export default function Footer() {
 
         {/* SERVICES */}
         <div>
-          <h3 className="text-white font-medium mb-4 uppercase tracking-wider">Services</h3>
+          <h3 className="text-white font-medium mb-4 uppercase tracking-wider">Pricing</h3>
           <ul className="space-y-3 text-sm">
             <li className="hover:text-white cursor-pointer transition-colors">Website Design</li>
             <li className="hover:text-white cursor-pointer transition-colors">Web Development</li>

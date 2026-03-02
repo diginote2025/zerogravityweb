@@ -1,25 +1,26 @@
+import Button1 from '@/components/ui/Button1';
 import React from 'react';
 
 const steps = [
   {
     id: 1,
-    title: "Discovery & Strategy",
-    description: "We dive deep into your business goals and user needs to create a comprehensive digital roadmap tailored to your vision.",
+    title: "Planning & Design",
+    description: "We’ll define the project goals, create wireframes, and design a user-friendly interface that aligns with your brand.",
   },
   {
     id: 2,
-    title: "Architecture & Design",
-    description: "Our team crafts intuitive UI/UX designs and robust system architectures, ensuring high performance, accessibility, and scalability.",
+    title: "Development",
+    description: "Our team will code and build the website, ensuring responsiveness, performance, and integration of all required features.",
   },
   {
     id: 3,
-    title: "Development & QA",
-    description: "We write clean, efficient code and conduct rigorous automated testing to guarantee a bug-free experience across all browsers.",
+    title: "Testing & Revisions",
+    description: "We’ll test the site on all major devices and browsers, fix any issues, and make final tweaks based on your feedback.",
   },
   {
     id: 4,
-    title: "Deployment & Growth",
-    description: "We manage the CI/CD pipeline for a seamless launch and provide ongoing optimization to ensure your product evolves with your users.",
+    title: "Launch",
+    description: "After approval, we’ll deploy the website and ensure everything is running smoothly for a successful launch.",
   },
 ];
 
@@ -34,17 +35,14 @@ export default function Process() {
             <h2 className="text-5xl font-medium tracking-tight mb-8 leading-tight">
               We build every <br /> digital step with precision.
             </h2>
-            <p className="text-gray-400 text-lg max-w-md leading-relaxed">
+            <p className="text-gray-400 text-lg mb-4 max-w-md leading-relaxed">
               Our process is engineered to deliver seamless, end-to-end web 
               solutions—from initial logic and interface design to final 
               cloud deployment and scaling.
             </p>
           </div>
           
-          <button className="mt-12 w-fit bg-[#F15A29] hover:bg-[#d44d21] text-white px-8 py-4 flex items-center gap-4 transition-colors group">
-            <span className="font-semibold">Discover more</span>
-            <span className="text-xl">+</span>
-          </button>
+         <Button1 button1="Discover more"/>
         </div>
 
         {/* Right Side: Timeline Steps */}
